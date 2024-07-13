@@ -19,7 +19,7 @@
     <!-- font p -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
 
-    <title>Paket Wisata Detail - Desa Wisata</title>
+    <title>Pierrot</title>
     <style>
         .navbar-brand{
           font-family: "Carter One", system-ui;

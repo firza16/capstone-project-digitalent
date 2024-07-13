@@ -12,9 +12,22 @@ if (!isset($_SESSION['admin'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Article Pierrot</title>
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- font pierrot -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+    <style>
+        .navbar-brand{
+          font-family: "Carter One", system-ui;
+          font-weight: 400;
+          font-style: normal;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,9 +66,9 @@ if (!isset($_SESSION['admin'])) {
                                     <td><?= $pwi['tanggal']; ?></td>
                                     <td><?= $pwi['deskripsi']; ?></td>
                                     <td><img src="img/<?= $pwi['gambar']; ?>" class="img-thumbnail" width="150"></td>
-                                    <td>
-                                        <a href="paketwisata-detail?id=<?= $pwi['id']; ?>" class="btn btn-sm btn-secondary"><i class="fas fa-portrait fa-fw"></i> Detail</a>
-                                        <a href="informasi-edit.php?id=<?= $pwi['id']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-pen fa-fw"></i> Edit</a>
+                                    <td class="text-center">
+                                        <a href="paketwisata-detail?id=<?= $pwi['id']; ?>" class="btn btn-sm btn-secondary mb-1"><i class="fas fa-portrait fa-fw"></i> Detail</a>
+                                        <a href="informasi-edit.php?id=<?= $pwi['id']; ?>" class="btn btn-sm btn-warning mb-1"><i class="fas fa-pen fa-fw"></i> Edit</a>
                                         <a href="informasi-hapus.php?id=<?= $pwi['id']; ?>" class="btn btn-sm btn-danger"><i class="fas fa-pen fa-fw"></i> Hapus</a>
                                     </td>
                                 </tr>
