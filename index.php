@@ -80,13 +80,7 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="login.php">
-            <i class="fas fa-user-lock"></i> Admin Login
-          </a>
-        </li>
-      </ul>
+
         </div>
       </div>
     </nav>
